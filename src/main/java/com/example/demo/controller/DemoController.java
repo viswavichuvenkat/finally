@@ -9,7 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 	@GetMapping ("/welcome")
 	public String welcome() {
-		return "heyy";
+		return "welcome";
+	}
+	@GetMapping ("/hello")
+	public String hwllo() {
+		return "hello";
+	}
+	@GetMapping ("/greeeting")
+	public String greetings() {
+		return "greeting";
 	}
 
 }
